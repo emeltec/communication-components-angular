@@ -1,0 +1,20 @@
+
+<div class="card" *ngIf="saeService.currentStep==1">
+<p>Info 1: {{saeService.dataInfo}} </p>
+<h3>Paso {{ saeService.currentStep }}</h3>
+</div>
+
+<div class="card" *ngIf="saeService.currentStep==2">
+<p>Info 2:</p>
+<h3>Paso {{ saeService.currentStep }}</h3>
+<a href="#" (click)="returnSimulator()">Volver a Simular</a>
+</div>
+
+<div class="card" *ngIf="saeService.currentStep==3">
+  <p>Info 3:</p>
+  <h3>Paso {{ saeService.currentStep }}</h3>
+  <a href="#" (click)="returnSimulator()">Volver a Simular</a>
+  </div>
+
+
+<app-super-avance-detail></app-super-avance-detail>

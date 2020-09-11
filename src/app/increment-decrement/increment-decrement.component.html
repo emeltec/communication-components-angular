@@ -1,0 +1,4 @@
+<button [disabled]="plazoSelected==plazoMin" (click)="decrement()">-</button>
+<input type="number" [min]="plazoMin" [max]="plazoMax" [value]="plazoSelected" (change)="bloquearRango()" [(ngModel)]="plazoSelected" >
+<button [disabled]="plazoSelected==plazoMax" (click)="increment()">+</button>
+<br>

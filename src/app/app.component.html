@@ -1,0 +1,14 @@
+
+
+<button [disabled]="cuotas==cuotaMin" (click)="decrement()">-</button>
+<input type="number" [min]="cuotaMin" [max]="cuotaMax" [value]="cuotas" (change)="bloquearRango()" [(ngModel)]="cuotas" >
+<button [disabled]="cuotas==cuotaMax" (click)="increment()">+</button>
+<br>
+
+<hr>
+
+<app-increment-decrement></app-increment-decrement>
+<hr>
+
+<app-super-avance></app-super-avance>
+

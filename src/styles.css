@@ -1,0 +1,37 @@
+
+html{
+  font-family: sans-serif;
+}
+
+input[type=number] {
+  width: 40px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/****/
+
+.card{
+  width:40%;
+  background:#ddd;
+  padding: 10px;
+  border-radius:10px;
+  margin-bottom: 5px;
+}
+
+.form{
+  width:40%;
+  background:rgb(207, 211, 188);
+  padding: 10px;
+  border-radius:10px;
+  margin-bottom: 5px;
+}

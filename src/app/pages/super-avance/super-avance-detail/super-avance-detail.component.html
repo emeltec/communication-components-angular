@@ -1,0 +1,22 @@
+<h2>Formularios:</h2>
+
+<div class="form" *ngIf="saeServ.currentStep==1">
+  <p>Form 1:</p>
+  <h3>Paso {{ saeServ.currentStep }}</h3>
+  <button type="button" (click)="submitForm1()">Continuar</button>
+  <button type="button" (click)="changeInfo()">Cambiar info</button>
+</div>
+
+<div class="form" *ngIf="saeServ.currentStep==2">
+  <p>Form 2:</p>
+  <h3>Paso {{ saeServ.currentStep }}</h3>
+  <button type="button" (click)="submitForm2()">Continuar</button>
+  <button type="button" (click)="Cambio()">Cambiar info 2</button>
+  <button type="button" (click)="returnSimulator()">Volver a simular</button>
+</div>
+
+<div class="form" *ngIf="saeServ.currentStep==3">
+  <p>Form 2:</p>
+  <h3>Paso {{ saeServ.currentStep }}</h3>
+  <button type="button" (click)="returnSimulator()">Finalizar</button>
+</div>

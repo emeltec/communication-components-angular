@@ -1,7 +1,16 @@
 
+
+<div>
+  <button (click)="chageTipoEfectivo('SAE')">SAE</button>
+  <button (click)="chageTipoEfectivo('AE')">AE</button>
+</div>
+<br>
+
 <div class="card" *ngIf="saeService.currentStep==1">
 <p>Info 1: {{saeService.dataInfo}} </p>
 <h3>Paso {{ saeService.currentStep }}</h3>
+<h3>Hola Bruno tienes efectivo disponible de</h3>
+<h2>S/{{ saeService.efDisponible }} disponible</h2>
 </div>
 
 <div class="card" *ngIf="saeService.currentStep==2">
@@ -17,4 +26,4 @@
   </div>
 
 
-<app-super-avance-detail></app-super-avance-detail>
+<app-super-avance-detail [datos]="datoPrincipal"></app-super-avance-detail>

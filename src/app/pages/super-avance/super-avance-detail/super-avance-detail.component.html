@@ -1,7 +1,9 @@
 <h2>Formularios:</h2>
 
 <div class="form" *ngIf="saeServ.currentStep==1">
-  <p>Form 1:</p>
+  <h2>Tipo {{saeServ.TIPO}} </h2>
+  <h2>Disponible: {{saeServ.efDisponible}} </h2>
+
   <h3>Paso {{ saeServ.currentStep }}</h3>
   <button type="button" (click)="submitForm1()">Continuar</button>
   <button type="button" (click)="changeInfo()">Cambiar info</button>

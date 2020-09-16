@@ -1,6 +1,7 @@
-import { Component, OnInit, Host } from '@angular/core';
+import { Component, OnInit, Host, Input } from '@angular/core';
 import { SuperAvanceService } from '../super-avance.service';
 import { SuperAvanceComponent } from '../super-avance.component';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-super-avance-detail',
@@ -8,15 +9,19 @@ import { SuperAvanceComponent } from '../super-avance.component';
 })
 export class SuperAvanceDetailComponent implements OnInit {
 
+  @Input() datos
+
   currentStep = 1;
 
   constructor(
     public saeServ: SuperAvanceService,
-    @Host() public _avance: SuperAvanceComponent
+    @Host() public _avance: SuperAvanceComponent,
   ) {  }
 
   ngOnInit() {
-    
+    console.log(this._avance)
+    console.log(this.datos)
+
   }
 
   changeInfo(){

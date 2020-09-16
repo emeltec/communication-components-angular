@@ -8,6 +8,7 @@ import { SuperAvanceComponent } from './pages/super-avance/super-avance.componen
 import { SuperAvanceDetailComponent } from './pages/super-avance/super-avance-detail/super-avance-detail.component';
 import { SuperAvanceService } from './pages/super-avance/super-avance.service';
 import { IncrementDecrementComponent } from './increment-decrement/increment-decrement.component';
+import { MatCheckboxModule } from '@angular/material/checkbox'
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { IncrementDecrementComponent } from './increment-decrement/increment-dec
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCheckboxModule,
   ],
   declarations: [	 
     AppComponent, 

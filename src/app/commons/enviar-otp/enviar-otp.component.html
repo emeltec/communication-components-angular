@@ -1,0 +1,18 @@
+
+<div class="otp-content">
+  <section class="example-section">
+    <mat-checkbox
+      [checked]="otpEnviado" 
+      [disabled]="otpEnviado" 
+      (change)="changeTerms($event)">
+      Acepto los Terminos y Condiciones
+    </mat-checkbox>
+  </section>
+  
+  <div class="msg-otp-enviado" *ngIf="otpEnviado">
+    Se ha enviado el clave de verificación al correo ememeoe@gmail.com
+    <div class="time">
+      <h3>{{ timeOtp }}</h3>
+    </div>
+  </div>
+</div>

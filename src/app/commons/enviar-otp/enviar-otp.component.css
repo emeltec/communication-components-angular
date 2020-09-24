@@ -1,0 +1,11 @@
+:host .msg-otp-enviado{
+    color: red;
+  }
+
+  :host .msg-otp-enviado .time{
+    color: green
+  }
+
+:host .otp-content {
+  padding: 8px;
+}
